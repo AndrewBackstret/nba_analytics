@@ -91,7 +91,7 @@ def load_data() -> Optional[pd.DataFrame]:
 df = load_data()
 
 if df is not None and not st.session_state.get("shown_data_loaded", False):
-    st.toast("✅ Data loaded successfully", icon="✅")
+    st.toast("✅ Data loaded successfully")
     st.session_state["shown_data_loaded"] = True
 
 if df is not None:
